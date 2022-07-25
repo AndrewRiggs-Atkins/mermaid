@@ -438,7 +438,7 @@ export const draw = function (text, id, _version, diagObj) {
   const element = root.select('#' + id + ' g');
   render(element, g, ['point', 'circle', 'cross'], 'flowchart', id);
 
-  setupGraphViewbox(g, svg, conf.diagramPadding, conf.useMaxWidth);
+  setupGraphViewbox(g, svg, conf.diagramPadding, conf.useMaxHeight, conf.useMaxWidth);
 
   // Index nodes
   diagObj.db.indexNodes('subGraph' + i);

@@ -194,6 +194,19 @@ Default value 50
 
 Default Value: 'basis'
 
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
+
 ### useMaxWidth
 
 | Parameter   | Description | Type    | Required | Values      |
@@ -341,6 +354,19 @@ Default value: false.
 Depending on css styling this might need adjustment.
 
 Default value: 1
+
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
 
 ### useMaxWidth
 
@@ -569,6 +595,19 @@ This might need adjustment to match your locale and preferences
 
 Default value: '%Y-%m-%d'.
 
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
+
 ### useMaxWidth
 
 | Parameter   | Description | Type    | Required | Values      |
@@ -692,6 +731,19 @@ Depending on css styling this might need adjustment.
 
 Default value: 1
 
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
+
 ### useMaxWidth
 
 | Parameter   | Description | Type    | Required | Values      |
@@ -716,6 +768,19 @@ Default value: true
 This will display arrows that start and begin at the same node as right angles, rather than a curves
 
 Default value: false
+
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
 
 ## useMaxWidth
 
@@ -742,6 +807,19 @@ Decides which rendering engine that is to be used for the rendering. Legal value
 dagre-d3 dagre-wrapper - wrapper for dagre implemented in mermaid
 
 Default value: 'dagre-d3'
+
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
 
 ## useMaxWidth
 
@@ -855,6 +933,19 @@ Default value: 15
 
 Font size (expressed as an integer representing a number of pixels) Default value: 12
 
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
+
 ### useMaxWidth
 
 | Parameter   | Description | Type    | Required | Values      |
@@ -872,6 +963,19 @@ Default value: true
 
 The object containing configurations specific for pie diagrams
 
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
+
 ### useMaxWidth
 
 | Parameter   | Description | Type    | Required | Values      |
@@ -888,6 +992,19 @@ Default value: true
 ## requirement
 
 The object containing configurations specific for req diagrams
+
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
 
 ### useMaxWidth
 
@@ -961,6 +1078,19 @@ The object containing configurations specific for c4 diagrams
 | boxMargin | Margin around boxes | Integer | Required | Any Positive Value |
 
 **Notes:** Default value: 10
+
+### useMaxHeight
+
+| Parameter   | Description | Type    | Required | Values      |
+| ----------- | ----------- | ------- | -------- | ----------- |
+| useMaxWidth | See notes   | boolean | 4        | true, false |
+
+**Notes:**
+
+When this flag is set the height and width is set to 100% and is then scaling with the
+available space if not the absolute space required is used.
+
+Default value: true
 
 ### useMaxWidth
 
@@ -1572,6 +1702,7 @@ Pushes in a directive to the configuration
       stroke: 'gray',
       fill: 'honeydew',
       fontSize: 12,
+      useMaxHeight: true,
       useMaxWidth: true,
     },
     flowchart: {
@@ -1592,6 +1723,7 @@ Pushes in a directive to the configuration
       messageAlign: 'center',
       mirrorActors: true,
       bottomMarginAdj: 1,
+      useMaxHeight: true,
       useMaxWidth: true,
       rightAngles: false,
       showSequenceNumbers: false,

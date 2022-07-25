@@ -638,7 +638,7 @@ export const draw = function (text, id, _version, diagObj) {
   const width = svgBounds.width + padding * 2;
   const height = svgBounds.height + padding * 2;
 
-  configureSvgSize(svg, height, width, conf.useMaxWidth);
+  configureSvgSize(svg, height, width, conf.useMaxHeight, conf.useMaxWidth);
 
   svg.attr('viewBox', `${svgBounds.x - padding} ${svgBounds.y - padding} ${width} ${height}`);
 

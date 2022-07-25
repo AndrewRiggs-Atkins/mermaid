@@ -89,7 +89,7 @@ export const draw = function (text, id, _version, diagObj) {
 
   // zoom in a bit
   const svgWidth = width * 1.75;
-  configureSvgSize(diagram, height, svgWidth, conf.useMaxWidth);
+  configureSvgSize(diagram, height, svgWidth, conf.useMaxHeight, conf.useMaxWidth);
 
   diagram.attr(
     'viewBox',

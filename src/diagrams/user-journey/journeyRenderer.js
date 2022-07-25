@@ -100,7 +100,7 @@ export const draw = function (text, id, version, diagObj) {
   const height = box.stopy - box.starty + 2 * conf.diagramMarginY;
   const width = LEFT_MARGIN + box.stopx + 2 * conf.diagramMarginX;
 
-  configureSvgSize(diagram, height, width, conf.useMaxWidth);
+  configureSvgSize(diagram, height, width, conf.useMaxHeight, conf.useMaxWidth);
 
   // Draw activity line
   diagram

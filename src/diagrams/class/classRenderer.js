@@ -244,7 +244,7 @@ export const draw = function (text, id, _version, diagObj) {
   const width = svgBounds.width + padding * 2;
   const height = svgBounds.height + padding * 2;
 
-  configureSvgSize(diagram, height, width, conf.useMaxWidth);
+  configureSvgSize(diagram, height, width, conf.useMaxHeight, conf.useMaxWidth);
 
   // Ensure the viewBox includes the whole svgBounds area with extra space for padding
   const vBox = `${svgBounds.x - padding} ${svgBounds.y - padding} ${width} ${height}`;

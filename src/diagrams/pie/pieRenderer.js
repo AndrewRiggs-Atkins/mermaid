@@ -51,7 +51,7 @@ export const draw = (txt, id, _version, diagObj) => {
     }
 
     const diagram = root.select('#' + id);
-    configureSvgSize(diagram, height, width, conf.pie.useMaxWidth);
+    configureSvgSize(diagram, height, width, conf.pie.useMaxHeight, conf.pie.useMaxWidth);
 
     addSVGAccessibilityFields(diagObj.db, diagram, id);
     // Set viewBox

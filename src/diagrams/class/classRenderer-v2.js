@@ -340,7 +340,7 @@ export const draw = function (text, id, _version, diagObj) {
   const element = root.select('#' + id + ' g');
   render(element, g, ['aggregation', 'extension', 'composition', 'dependency'], 'classDiagram', id);
 
-  setupGraphViewbox(g, svg, conf.diagramPadding, conf.useMaxWidth);
+  setupGraphViewbox(g, svg, conf.diagramPadding, conf.useMaxHeight, conf.useMaxWidth);
 
   // Add label rects for non html labels
   if (!conf.htmlLabels) {

@@ -478,7 +478,7 @@ export const draw = function (text, id, _version, diagObj) {
       label.insertBefore(rect, label.firstChild);
     }
   }
-  setupGraphViewbox(g, svg, conf.diagramPadding, conf.useMaxWidth);
+  setupGraphViewbox(g, svg, conf.diagramPadding, conf.useMaxHeight, conf.useMaxWidth);
 
   // If node has a link, wrap it in an anchor SVG object.
   const keys = Object.keys(vert);

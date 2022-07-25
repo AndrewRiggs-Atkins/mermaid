@@ -737,12 +737,19 @@ const d3Attrs = function (d3Elem, attrs) {
  *
  * @param {number} height The height of the SVG
  * @param {number} width The width of the SVG
+ * @param {boolean} useMaxHeight Whether or not to use max-height and set height to 100%
  * @param {boolean} useMaxWidth Whether or not to use max-width and set width to 100%
  * @returns {Map<'height' | 'width' | 'style', string>} Attributes for the SVG
  */
-export const calculateSvgSizeAttrs = function (height, width, useMaxWidth) {
+export const calculateSvgSizeAttrs = function (height, width, useMaxHeight, useMaxWidth) {
   let attrs = new Map();
-  attrs.set('height', height);
+  if (useMaxHeight) {
+    attrs.set('height', '100%');
+    attrs.set('style', `max-height: ${height}px;`);
+  } else {
+    attrs.set('height', height);
+  }
+  return attrs;
   if (useMaxWidth) {
     attrs.set('width', '100%');
     attrs.set('style', `max-width: ${width}px;`);
@@ -758,13 +765,14 @@ export const calculateSvgSizeAttrs = function (height, width, useMaxWidth) {
  * @param {SVGSVGElement} svgElem The SVG Element to configure
  * @param {number} height The height of the SVG
  * @param {number} width The width of the SVG
+ * @param {boolean} useMaxHeight Whether or not to use max-height and set height to 100%
  * @param {boolean} useMaxWidth Whether or not to use max-width and set width to 100%
  */
-export const configureSvgSize = function (svgElem, height, width, useMaxWidth) {
-  const attrs = calculateSvgSizeAttrs(height, width, useMaxWidth);
+export const configureSvgSize = function (svgElem, height, width, useMaxHeight, useMaxWidth) {
+  const attrs = calculateSvgSizeAttrs(height, width, useMaxHeight, useMaxWidth);
   d3Attrs(svgElem, attrs);
 };
-export const setupGraphViewbox = function (graph, svgElem, padding, useMaxWidth) {
+export const setupGraphViewbox = function (graph, svgElem, padding, useMaxHeight, useMaxWidth) {
   const svgBounds = svgElem.node().getBBox();
   const sWidth = svgBounds.width;
   const sHeight = svgBounds.height;
@@ -785,7 +793,7 @@ export const setupGraphViewbox = function (graph, svgElem, padding, useMaxWidth)
     ty = (sHeight - height) / 2 + padding;
     height = sHeight + padding * 2;
   }
-  configureSvgSize(svgElem, height, width, useMaxWidth);
+  configureSvgSize(svgElem, height, width, useMaxHeight, useMaxWidth);
 
   // Ensure the viewBox includes the whole svgBounds area with extra space for padding
   const vBox = `0 0 ${width} ${height}`;

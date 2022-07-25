@@ -549,7 +549,7 @@ export const draw = function (txt, id, ver, diagObj) {
   const width = svgBounds.width + padding * 2;
   const height = svgBounds.height + padding * 2;
 
-  configureSvgSize(diagram, height, width, conf.useMaxWidth);
+  configureSvgSize(diagram, height, width, conf.useMaxHeight, conf.useMaxWidth);
   const vBox = `${
     svgBounds.x -
     padding -

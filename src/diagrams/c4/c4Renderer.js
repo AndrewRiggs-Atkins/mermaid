@@ -654,7 +654,7 @@ export const draw = function (_text, id, _version, diagObj) {
       .attr('y', box.starty + conf.diagramMarginY);
   }
 
-  configureSvgSize(diagram, height, width, conf.useMaxWidth);
+  configureSvgSize(diagram, height, width, conf.useMaxHeight, conf.useMaxWidth);
 
   const extraVertForTitle = title ? 60 : 0;
   diagram.attr(

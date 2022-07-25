@@ -200,6 +200,18 @@ const config = {
     padding: 15,
 
     /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
+
+    /**
      * | Parameter   | Description | Type    | Required | Values      |
      * | ----------- | ----------- | ------- | -------- | ----------- |
      * | useMaxWidth | See notes   | boolean | 4        | true, false |
@@ -362,6 +374,18 @@ const config = {
      * Default value: 1
      */
     bottomMarginAdj: 1,
+
+    /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
 
     /**
      * | Parameter   | Description | Type    | Required | Values      |
@@ -640,6 +664,18 @@ const config = {
     axisFormat: '%Y-%m-%d',
 
     /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
+
+    /**
      * | Parameter   | Description | Type    | Required | Values      |
      * | ----------- | ----------- | ------- | -------- | ----------- |
      * | useMaxWidth | See notes   | boolean | 4        | true, false |
@@ -777,6 +813,18 @@ const config = {
     bottomMarginAdj: 1,
 
     /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
+
+    /**
      * | Parameter   | Description | Type    | Required | Values      |
      * | ----------- | ----------- | ------- | -------- | ----------- |
      * | useMaxWidth | See notes   | boolean | 4        | true, false |
@@ -820,6 +868,18 @@ const config = {
     dividerMargin: 10,
     padding: 5,
     textHeight: 10,
+
+    /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
 
     /**
      * | Parameter   | Description | Type    | Required | Values      |
@@ -867,6 +927,18 @@ const config = {
     edgeLengthFactor: '20',
     compositTitleSize: 35,
     radius: 5,
+
+    /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
     /**
      * | Parameter   | Description | Type    | Required | Values      |
      * | ----------- | ----------- | ------- | -------- | ----------- |
@@ -988,6 +1060,18 @@ const config = {
     fontSize: 12,
 
     /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
+
+    /**
      * | Parameter   | Description | Type    | Required | Values      |
      * | ----------- | ----------- | ------- | -------- | ----------- |
      * | useMaxWidth | See Notes   | boolean | Required | true, false |
@@ -1007,6 +1091,18 @@ const config = {
     useWidth: undefined,
 
     /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
+
+    /**
      * | Parameter   | Description | Type    | Required | Values      |
      * | ----------- | ----------- | ------- | -------- | ----------- |
      * | useMaxWidth | See Notes   | boolean | Required | true, false |
@@ -1024,6 +1120,18 @@ const config = {
   /** The object containing configurations specific for req diagrams */
   requirement: {
     useWidth: undefined,
+
+    /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
 
     /**
      * | Parameter   | Description | Type    | Required | Values      |
@@ -1130,6 +1238,18 @@ const config = {
      * **Notes:** Default value: 10
      */
     boxMargin: 10,
+
+    /**
+     * | Parameter    | Description | Type    | Required | Values      |
+     * | ------------ | ----------- | ------- | -------- | ----------- |
+     * | useMaxHeight | See Notes   | boolean | Required | true, false |
+     *
+     * **Notes:** When this flag is set to true, the height and width is set to 100% and is then
+     * scaling with the available space. If set to false, the absolute space required is used.
+     *
+     * Default value: true
+     */
+     useMaxHeight: true,
 
     /**
      * | Parameter   | Description | Type    | Required | Values      |

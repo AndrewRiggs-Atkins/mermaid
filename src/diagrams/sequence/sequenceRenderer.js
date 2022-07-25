@@ -880,7 +880,7 @@ export const draw = function (_text, id, _version, diagObj) {
       .attr('y', -25);
   }
 
-  configureSvgSize(diagram, height, width, conf.useMaxWidth);
+  configureSvgSize(diagram, height, width, conf.useMaxHeight, conf.useMaxWidth);
 
   const extraVertForTitle = title ? 40 : 0;
   diagram.attr(

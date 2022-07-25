@@ -562,6 +562,7 @@ export default mermaidAPI;
  *       stroke: 'gray',
  *       fill: 'honeydew',
  *       fontSize: 12,
+ *       useMaxHeight: true,
  *       useMaxWidth: true,
  *     },
  *     flowchart: {
@@ -582,6 +583,7 @@ export default mermaidAPI;
  *       messageAlign: 'center',
  *       mirrorActors: true,
  *       bottomMarginAdj: 1,
+ *       useMaxHeight: true,
  *       useMaxWidth: true,
  *       rightAngles: false,
  *       showSequenceNumbers: false,
